@@ -1,0 +1,181 @@
+.handle-book {
+    width: 92%;
+    min-height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    // background-color: white;
+}
+
+.left-panel {
+    width: 18%;
+    min-height: 100vh;
+    padding: 0 15px;
+    border-right: 1px solid gray;
+}
+
+.my-book {
+    margin: 30px 0;
+}
+
+.add-button {
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+
+}
+
+.add-book-button {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.dark-mode-button {
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+.right-panel {
+    width: 81%;
+    min-height: 100vh;
+    padding: 0 25px;
+}
+
+.light {
+    background-color: white;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+
+    .modal-view {
+        color: black;
+    }
+
+    .add-button {
+        background-color: #000;
+        color: white;
+    }
+
+    .dark-mode-button {
+        background-color: #000;
+        color: white;
+    }
+}
+
+.search-icon {
+    display: flex;
+    border: 2px solid gray;
+    padding: 2px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.search-bar {
+    border-radius: 0px 5px 5px 0;
+    border: none;
+    outline: none;
+    padding: 2px;
+}
+
+.search-bar::-webkit-search-cancel-button {
+    font-size: 18px;
+    margin: 0 5px;
+    background: #fff;
+    color: #222;
+}
+
+.display-books {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.book-container-details {
+    width: 34%;
+    height: 44%;
+
+}
+
+.opan-modal-img {
+    position: relative;
+    cursor: pointer;
+}
+
+.book-conatiner-details:hover .edit-button {
+    display: block;
+}
+
+.book-conatiner-details:hover .delete-button {
+    display: block;
+}
+
+.book-img {
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.edit-button {
+    position: absolute;
+    top: 30px;
+    right: 48px;
+    padding: 5px 5px 2px;
+    background: #a49f9fc7;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 5;
+    display: none;
+}
+
+.delete-button {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    padding: 5px 5px 2px;
+    background: #a49f9fc7;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 5;
+    display: none;
+
+}
+
+.edit-button:hover {
+    color: #0080006c;
+}
+
+.delete-button:hover {
+    color: red;
+}
+
+.book-percent {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    padding: 8px 8px 8px 12px;
+    background: #8080809c;
+    border-radius: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.book-gener {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 15px;
+    background: #8080809c;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.modal {
+    position: absolute;
+    width: 100%;
+    // min-height: 100vh;
+}

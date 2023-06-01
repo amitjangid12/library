@@ -1,0 +1,35 @@
+.add-new-book {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(green, skyblue, white);
+}
+
+.add-book-contianer {
+    width: 35%;
+    text-align: center;
+}
+
+.add-book-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.text-area {
+    height: 70px;
+}
+
+.error-show {
+    color: red;
+
+}
+
+.submit-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}

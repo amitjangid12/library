@@ -1,0 +1,148 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "bookName": "Faith",
+      "author": "David Adams",
+      "bookPercent": "68",
+      "bookGener": "Fiction",
+      "description": "Hundreds of years before the Toralii attacked Earth, destroying the cities of Beijing, Tehran and Sydney, before they developed the void warp technology and destroyed their home world, they warred amongst themselves.",
+      "photo": "https://cdn.shopify.com/s/files/1/1075/8404/products/9780385666527_grande.jpg?v=1518639585"
+    },
+    {
+      "id": 2,
+      "bookName": "The World of Ice and Fire",
+      "author": "George R. R. Martin ",
+      "bookPercent": "42",
+      "bookGener": "Fantasy",
+      "description": "If the past is prologue, then George R. R. Martin’s masterwork—the most inventive and entertaining fantasy saga of our time—warrants one hell of an introduction. At long last, it has arrived with The World of Ice & Fire.",
+      "photo": "https://www.dymocks.com.au/Pages/ImageHandler.ashx?q=9780007580910&w=&h=570"
+    },
+    {
+      "id": 3,
+      "bookName": "The Power of Habit",
+      "author": "Charles Duhigg",
+      "description": "In The Power of Habit, award-winning New York Times business reporter Charles Duhigg takes readers inside labs where brain scans record habits as they flourish and die; classrooms in which students learn to boost their willpower; and boardrooms where executives dream up products that tug on our deepest habitual urges.",
+      "photo": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1545854312i/12609433.jpg",
+      "bookPercent": "12",
+      "bookGener": "Education"
+    },
+    {
+      "id": 4,
+      "bookName": "Wild Wisdom",
+      "author": "Neil Douglas-Klotz",
+      "bookPercent": "72",
+      "bookGener": "Adventure",
+      "description": "This little book gathers the sayings and stories of the women and men who have sunk their roots deep into inner retreat and brought forth wisdom for all times and peoples.",
+      "photo": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQTKwnQHm-Pzw1E9OH_wZL2O0Flligao25tjOXeImWXxvm68wL65fk1zIR8lRa8WHlqflyyOwiHVyGqt_V7-wU1RGjg9kuux02oEukvPbA&usqp=CAE"
+    },
+    {
+      "id": 5,
+      "bookName": "The Sky at Night",
+      "author": "Chris North and Paul Abel",
+      "bookPercent": "54",
+      "bookGener": "Science",
+      "description": "We've all learned the basics at school but how much can you remember? Expert astronomers and co-presenters of The Sky at Night Chris North and Paul Abel take a fascinating guided tour of our Solar System and explain its wonders.",
+      "photo": "https://m.media-amazon.com/images/I/418s1N6K3aL._SX316_BO1,204,203,200_.jpg"
+    },
+    {
+      "id": 6,
+      "bookName": "Into thin Air",
+      "author": "Jon Krakauer",
+      "description": "Into Thin Air: A Personal Account of the Mt. Everest Disaster is a 1997 bestselling nonfiction book written by Jon Krakauer. It details Krakauer's experience in the 1996 Mount Everest disaster, in which eight climbers were killed and several others were stranded by a storm. ",
+      "photo": "https://m.media-amazon.com/images/I/61weZRaAwcL._AC_UF894,1000_QL80_.jpg",
+      "bookPercent": "30",
+      "bookGener": "Nature"
+    },
+    {
+      "id": 7,
+      "bookName": "Humans",
+      "author": "Brandon Stanton",
+      "bookPercent": "15",
+      "bookGener": "Fantasy",
+      "description": "One of the most influential art projects of the decade' – Washington PostFrom street photographer Brandon Stanton, Humans is a book that connects readers as global citizens at a time when erecting more borders is the order of the day.",
+      "photo": "https://m.media-amazon.com/images/I/81GeAcdMCsL.jpg"
+    },
+    {
+      "id": 8,
+      "bookName": "Wonders of the World",
+      "author": "Lonely Planet",
+      "description": "Extraordinary? You bet. Elusive? Not quite. From Antarctica and the Amazon to Victoria Falls and the Great Wall of China, Lonely Planet reveals 101 spectacular sights and how to see them on any budget.",
+      "photo": "https://cdn.shopify.com/s/files/1/0650/8521/0875/products/lonely-planet-s-wonders-of-the-world_700x.jpg?v=1667661439",
+      "bookPercent": "90",
+      "bookGener": "Education"
+    },
+    {
+      "id": 9,
+      "bookName": "Paint a New Scene",
+      "author": "Deirdre O'Dare",
+      "description": "Young widow and artist Keely must reinvent her life after her husband's sudden death. Her first step is to move to the new town. When her landlady hires a couple of itinerant painter-handymen to refurbish the house, Keely begins to awaken from her grief-spawned isolation.",
+      "photo": "https://m.media-amazon.com/images/I/51mgglf1GCL.jpg",
+      "bookPercent": "54",
+      "bookGener": "Romance"
+    },
+    {
+      "id": 10,
+      "bookName": "Along the Enchanted Way",
+      "author": "William Blacker",
+      "description": "Change is now coming to rural Romania, and William Blacker's adventures will soon be part of its history. From his early carefree days tramping the hills of Transylvania to the book's poignant ending, 'Along the Enchanted Way' transports us back to a magical world most of us thought had vanished long ago.",
+      "photo": "https://m.media-amazon.com/images/I/51kyPl0NC2L._SX324_BO1,204,203,200_.jpg",
+      "bookPercent": "18",
+      "bookGener": "Travel"
+    },
+    {
+      "id": 11,
+      "bookName": "A Court of Silver Flames",
+      "author": "Sarah J.Maas",
+      "description": "Nesta Archeron has always been prickly-proud, swift to anger, and slow to forgive. And ever since being forced into the Cauldron and becoming High Fae against her will, she's struggled to find a place for herself within the strange, deadly world she inhabits.",
+      "photo": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1602570691l/53138095.jpg",
+      "bookPercent": "36",
+      "bookGener": "Fantasy"
+    },
+    {
+      "id": 12,
+      "bookName": "The Sporades Sailing Pilot",
+      "author": "David Nairn",
+      "description": "The Sporades Sailing Pilot '2012' is the most comprehensive pilot and cruising guide for the Northwest Aegean Sea area in Greece . This sailing pilot covers all the islands in the Northern Sporades; The gulf of Volos; The Pelion peninsula; The Trikeri and Orei Channels;",
+      "photo": "https://media.s-bol.com/xkkr1XYYXNwl/900x1200.jpg",
+      "bookPercent": "12",
+      "bookGener": "Travel"
+    },
+    {
+      "id": 13,
+      "bookName": "Empower Yourself",
+      "author": "Xenia Tchoumi",
+      "description": "The ultimate guide to self-empowerment from motivational speaker and digital entrepreneur Xenia Tchoumi, offering tips and techniques for staying fiercely independent in a world of social conditioning, making the internet work for you (instead of against you) and living your best, most powerful life",
+      "photo": "https://m.media-amazon.com/images/I/71Fp58s6YbL._AC_UF894,1000_QL80_.jpg",
+      "bookPercent": "100",
+      "bookGener": "Health & Well-Being"
+    },
+    {
+      "id": 14,
+      "bookName": "Artistic Places",
+      "author": "Susie Hodge",
+      "description": "Explore the landscapes and places that inspired great art: find peace in Monet’s lily-filled garden oasis, climb Mount Fuji on a printmaker’s pilgrimage, sail with Gauguin to the South Pacific to stretch your imagination, or contemplate light and the changing seasons on Chelsea Embankment.",
+      "photo": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609725945i/54500782.jpg",
+      "bookPercent": "36",
+      "bookGener": "Adventure"
+    },
+    {
+      "id": 15,
+      "bookName": "FireHeart Tiger",
+      "author": "Aliette De Bodard",
+      "description": "Quiet, thoughtful princess Thanh was sent away as a hostage to the powerful faraway country of Ephteria as a child. Now she’s returned to her mother’s imperial court, haunted not only by memories of her first romance, but by worrying magical echoes of a fire that devastated Ephteria’s royal palace.",
+      "photo": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1613123818i/53317495.jpg",
+      "bookPercent": "0",
+      "bookGener": "Fiction"
+    },
+    {
+      "id": 16,
+      "bookName": "The Discovery of India",
+      "author": "Jawaharlal Nehru",
+      "bookPercent": "10",
+      "bookGener": "History",
+      "description": "First prime minister of independent India (1947 – 64), Nehru was educated at home and in Britain and became a lawyer in 1912. More interested in politics than law, he was impressed by Mohandas K. Gandhi's approach to Indian independence.",
+      "photo": "https://i.ibb.co/tPrj6HW/images-3.jpg"
+    }
+  ]
+}
