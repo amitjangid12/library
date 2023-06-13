@@ -9,32 +9,57 @@ function* getProduct() {
   yield put({ type: FETCH_DATA_REQUEST, data })
 }
 
-function* addRequest(data) {
+// function* addRequest(data) {
 
-  yield fetch(`http://localhost:4401/posts`, {
-    method: 'post',
+//   yield fetch(`http://localhost:4401/posts`, {
+//     method: 'post',
+//     headers: {
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify(data.data)
+//   })
+//     .then(r => r.json())
+//     .then(d => console.log(d))
+//     .catch(e => console.log(e))
+// }
+
+// function* updateRequest(data) {
+
+//   yield fetch(`http://localhost:4401/posts/${data.data.id}`, {
+//     method: 'put',
+//     headers: {
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify(data.data)
+//   })
+//     .then(r => r.json())
+//     .then(d => console.log(d))
+//     .catch(e => console.log(e))
+// }
+
+
+function* requestData(action) {
+  const { type, data } = action;
+
+  let url, method;
+
+  if (type === POST_DATA) {
+    url = 'http://localhost:4401/posts';
+    method = 'post';
+  }
+  if (type === UPDATE_DATA) {
+    url = `http://localhost:4401/posts/${data.id}`;
+    method = 'put';
+  }
+
+  const response = yield fetch(url, {
+    method: method,
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify(data.data)
-  })
-    .then(r => r.json())
-    .then(d => console.log(d))
-    .catch(e => console.log(e))
-}
-
-function* updateRequest(data) {
-
-  yield fetch(`http://localhost:4401/posts/${data.data.id}`, {
-    method: 'put',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data.data)
-  })
-    .then(r => r.json())
-    .then(d => console.log(d))
-    .catch(e => console.log(e))
+    body: JSON.stringify(data)
+  });
+  yield response.json();
 }
 
 function* deleteRequest(data) {
@@ -46,8 +71,10 @@ function* deleteRequest(data) {
 function* saga() {
 
   yield takeEvery(FETCH_DATA, getProduct)
-  yield takeEvery(POST_DATA, addRequest)
-  yield takeEvery(UPDATE_DATA, updateRequest)
+  yield takeEvery([POST_DATA, UPDATE_DATA], requestData);
+
+  // yield takeEvery(POST_DATA, addRequest)
+  // yield takeEvery(UPDATE_DATA, updateRequest)
   yield takeEvery(DELETE_DATA, deleteRequest)
 
 }

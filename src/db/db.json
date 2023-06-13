@@ -4,7 +4,7 @@
       "id": 1,
       "bookName": "Faith",
       "author": "David Adams",
-      "bookPercent": "68",
+      "bookPercent": "64",
       "bookGener": "Fiction",
       "description": "Hundreds of years before the Toralii attacked Earth, destroying the cities of Beijing, Tehran and Sydney, before they developed the void warp technology and destroyed their home world, they warred amongst themselves.",
       "photo": "https://cdn.shopify.com/s/files/1/1075/8404/products/9780385666527_grande.jpg?v=1518639585"
@@ -13,7 +13,7 @@
       "id": 2,
       "bookName": "The World of Ice and Fire",
       "author": "George R. R. Martin ",
-      "bookPercent": "42",
+      "bookPercent": "52",
       "bookGener": "Fantasy",
       "description": "If the past is prologue, then George R. R. Martin’s masterwork—the most inventive and entertaining fantasy saga of our time—warrants one hell of an introduction. At long last, it has arrived with The World of Ice & Fire.",
       "photo": "https://www.dymocks.com.au/Pages/ImageHandler.ashx?q=9780007580910&w=&h=570"
@@ -40,7 +40,7 @@
       "id": 5,
       "bookName": "The Sky at Night",
       "author": "Chris North and Paul Abel",
-      "bookPercent": "54",
+      "bookPercent": "52",
       "bookGener": "Science",
       "description": "We've all learned the basics at school but how much can you remember? Expert astronomers and co-presenters of The Sky at Night Chris North and Paul Abel take a fascinating guided tour of our Solar System and explain its wonders.",
       "photo": "https://m.media-amazon.com/images/I/418s1N6K3aL._SX316_BO1,204,203,200_.jpg"
@@ -85,10 +85,10 @@
       "id": 10,
       "bookName": "Along the Enchanted Way",
       "author": "William Blacker",
+      "bookPercent": "22",
+      "bookGener": "Travel",
       "description": "Change is now coming to rural Romania, and William Blacker's adventures will soon be part of its history. From his early carefree days tramping the hills of Transylvania to the book's poignant ending, 'Along the Enchanted Way' transports us back to a magical world most of us thought had vanished long ago.",
-      "photo": "https://m.media-amazon.com/images/I/51kyPl0NC2L._SX324_BO1,204,203,200_.jpg",
-      "bookPercent": "18",
-      "bookGener": "Travel"
+      "photo": "https://m.media-amazon.com/images/I/51kyPl0NC2L._SX324_BO1,204,203,200_.jpg"
     },
     {
       "id": 11,
@@ -130,10 +130,10 @@
       "id": 15,
       "bookName": "FireHeart Tiger",
       "author": "Aliette De Bodard",
+      "bookPercent": "19",
+      "bookGener": "Fiction",
       "description": "Quiet, thoughtful princess Thanh was sent away as a hostage to the powerful faraway country of Ephteria as a child. Now she’s returned to her mother’s imperial court, haunted not only by memories of her first romance, but by worrying magical echoes of a fire that devastated Ephteria’s royal palace.",
-      "photo": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1613123818i/53317495.jpg",
-      "bookPercent": "0",
-      "bookGener": "Fiction"
+      "photo": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1613123818i/53317495.jpg"
     },
     {
       "id": 16,
@@ -143,6 +143,42 @@
       "bookGener": "History",
       "description": "First prime minister of independent India (1947 – 64), Nehru was educated at home and in Britain and became a lawyer in 1912. More interested in politics than law, he was impressed by Mohandas K. Gandhi's approach to Indian independence.",
       "photo": "https://i.ibb.co/tPrj6HW/images-3.jpg"
+    },
+    {
+      "id": 17,
+      "bookName": "The Tiger Rising",
+      "author": "Gabriel Garcia Marquez",
+      "bookPercent": "23",
+      "bookGener": "Fiction",
+      "description": "The Tiger Rising is a 2022 American drama film written and directed by Ray Giarratana and starring Christian Convery, Madalen Mills, Katharine McPhee, Sam Trammell, Dennis Quaid and Queen Latifah. It is based on the 2001 book of the same name by Kate DiCamillo.",
+      "photo": "https://i.ibb.co/VS0rq0x/The-Tiger-Rising.jpg"
+    },
+    {
+      "bookName": "A Tiger for Malgudi",
+      "author": "R. K. Narayan",
+      "description": "A Tiger for Malgudi is a 1983 novel by R. K. Narayan told by a tiger in the first person. Deeply moving is the attachment of the tiger to the monk and the monk's care for the tiger. R. K. Narayan consulted with noted tiger expert K. Ullas Karanth on the writing of this novel. Narayan used the teaching of Buddha's enlightenment in this particular novel. The novel is set in the fictional town of Malgudi.",
+      "photo": "https://i.ibb.co/PF1q1k3/ATiger-For-Malgudi.jpg",
+      "bookPercent": "45",
+      "bookGener": "Fiction",
+      "id": 18
+    },
+    {
+      "id": 19,
+      "bookName": "alone tiger",
+      "author": "JWB Douglas ",
+      "bookPercent": "78",
+      "bookGener": "Nature",
+      "description": "The Tiger Rising is a 2022 American drama film written and directed by Ray Giarratana and starring Christian Convery, Madalen Mills, Katharine.",
+      "photo": "https://i.ibb.co/pWsqSCb/images-2.jpg"
+    },
+    {
+      "bookName": "e",
+      "author": "we",
+      "description": "e",
+      "photo": "https://i.ibb.co/PYqsCg0/images-3.jpg",
+      "bookPercent": "e",
+      "bookGener": "e",
+      "id": 20
     }
   ]
 }

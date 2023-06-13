@@ -60,8 +60,16 @@ function HandleBook() {
         const bookToUpdate = currentData.find(item => item.id === id);
         navigate('/updateData', { state: { book: bookToUpdate, imageUrl: bookToUpdate.photo } });
     };
+    let interval;
 
     useEffect(() => {
+
+        clearTimeout(interval)
+
+        interval = setTimeout(() => {
+            dispatch(fetchRequest())
+
+        }, 500)
 
         setTimeout(() => {
             setIsLoading(false)
@@ -73,7 +81,7 @@ function HandleBook() {
             setIsDarkMode(storedMode === 'true');
         }
         // handleData()
-        dispatch(fetchRequest())
+        // dispatch(fetchRequest())
     }, [])
 
     return (
@@ -108,7 +116,7 @@ function HandleBook() {
                                 {
                                     filter.length > 0 ? (
                                         filter && filter.length > 0 && filter.map(val =>
-                                            <div className='book-conatiner-details' key={val.id} style={{ position: 'relative', paddingTop: '20px', margin: '0 25px 0 0' }} >
+                                            <div className='book-container-details' key={val.id} style={{ position: 'relative', paddingTop: '20px', margin: '0 25px 0 0' }} >
 
                                                 <span className='edit-button' onClick={(e) => handleUpdate(val.id)} ><MdOutlineEdit /></span>
 
@@ -129,9 +137,10 @@ function HandleBook() {
                                         )
                                     ) : (
 
-                                        isSearch ? (!filter.length && <p style={{ position: 'absolute', textAlign: 'center', width: '70%', fontSize: '25px', fontWeight: 'bold' }}> ' {searchValue} ' Result not Found </p>) : (
+                                        isSearch ? (!filter.length && <p style={{ position: 'absolute', textAlign: 'center', width: '70%', fontSize: '25px', fontWeight: 'bold' }}> 
+                                        ' {searchValue} ' Result not Found </p>) : (
                                             currentData && currentData.length > 0 && currentData.map(d => (
-                                                <div className='book-conatiner-details' key={d.id} style={{ position: 'relative', paddingTop: '20px', margin: '0 25px 0 0', height: '' }} >
+                                                <div className='book-container-details' key={d.id} style={{ position: 'relative', paddingTop: '20px', margin: '0 25px 0 0', height: '' }} >
                                                     <span className='edit-button' onClick={(e) => handleUpdate(d.id)} ><MdOutlineEdit /></span>
                                                     <span className='delete-button' onClick={(e) => dispatch(deleteRequest(d.id))} ><MdDelete /></span>
                                                     <div className='opan-modal-img' onClick={() => {
