@@ -21,7 +21,7 @@ function HandleBook() {
     const [isOpenModal, setIsOpenModal] = useState(false);
     const [currentValue, setCurrentValue] = useState('');
     const [isLoading, setIsLoading] = useState(true);
-
+    const [showNotFound, setShowNotFound] = useState(false)
     const navigate = useNavigate()
     const dispatch = useDispatch()
     const currentData = useSelector((d) => d.reducer)
@@ -41,14 +41,15 @@ function HandleBook() {
     // }
 
     const handleSearch = (e) => {
-        setIsSearch(true)
+        // console.log(e.target.value,'eee');
+        // setIsSearch(true)
         let searhVal = e.target.value
         setSearchValue(searhVal)
 
-        const filtered = currentData.filter((item) =>
-            item.bookName.toUpperCase().includes(searhVal.toUpperCase())
-        )
-        setFilter(filtered)
+        // const filtered = currentData.filter((item) =>
+        //     item.bookName.toUpperCase().includes(searhVal.toUpperCase())
+        // )
+        // setFilter(filtered)
     }
 
     // const handleDelete = async(id) => {
@@ -61,15 +62,33 @@ function HandleBook() {
         navigate('/updateData', { state: { book: bookToUpdate, imageUrl: bookToUpdate.photo } });
     };
     let interval;
+    let debounceTime;
+    useEffect(() => {
+        clearTimeout(debounceTime)
+        debounceTime = setTimeout(() => {
+
+            dispatch(fetchRequest())
+        });
+    }, [])
 
     useEffect(() => {
 
         clearTimeout(interval)
-
-        interval = setTimeout(() => {
-            dispatch(fetchRequest())
-
-        }, 500)
+        if (searchValue !== "") {
+            setIsSearch(true);
+            interval = setTimeout(() => {
+                const commonWord = currentData.filter((newValue) =>
+                    newValue.bookName.toUpperCase().includes(searchValue.toUpperCase().trim())
+                );
+                setFilter(commonWord);
+                setShowNotFound(commonWord.length === 0)
+                console.log("use if", commonWord);
+            }, 500);
+        } else {
+            console.log('else use');
+            setFilter([]);
+            setIsSearch(false);
+        }
 
         setTimeout(() => {
             setIsLoading(false)
@@ -81,8 +100,9 @@ function HandleBook() {
             setIsDarkMode(storedMode === 'true');
         }
         // handleData()
-        // dispatch(fetchRequest())
-    }, [])
+
+    }, [searchValue])
+
 
     return (
         <>
@@ -93,7 +113,7 @@ function HandleBook() {
                         <div className='left-panel'>
                             <h2>Library</h2>
                             <div className='my-book'>
-                                <h3><span style={{ marginRight: '20px', fontSize: '18px' }}><FaRegPlayCircle /></span>My Books <span style={{ marginLeft: '30px' }}>{currentData.length}</span></h3>
+                                <h3><span style={{ marginRight: '20px', fontSize: '18px' }}><FaRegPlayCircle /></span>My Books <span style={{ marginLeft: '30px' }}>{filter.length > 0 ? filter.length : currentData.length}</span></h3>
                             </div>
                             <div className='add-book-button' style={{ position: 'relative', padding: '30px 0' }}>
                                 <span style={{ marginRight: '20px' }}><IoMdAddCircleOutline /></span><button className='add-button' onClick={() => navigate('/addBook')}>Add new Book</button>
@@ -118,9 +138,9 @@ function HandleBook() {
                                         filter && filter.length > 0 && filter.map(val =>
                                             <div className='book-container-details' key={val.id} style={{ position: 'relative', paddingTop: '20px', margin: '0 25px 0 0' }} >
 
-                                                <span className='edit-button' onClick={(e) => handleUpdate(val.id)} ><MdOutlineEdit /></span>
+                                                <span className='edit-button' onClick={() => handleUpdate(val.id)} ><MdOutlineEdit /></span>
 
-                                                <span className='delete-button' onClick={(e) => dispatch(deleteRequest(val.id))} ><MdDelete /></span>
+                                                <span className='delete-button' onClick={() => dispatch(deleteRequest(val.id))} ><MdDelete /></span>
                                                 <div className='opan-modal-img' onClick={() => {
                                                     setCurrentValue(val)
                                                     setIsOpenModal(true)
@@ -137,12 +157,12 @@ function HandleBook() {
                                         )
                                     ) : (
 
-                                        isSearch ? (!filter.length && <p style={{ position: 'absolute', textAlign: 'center', width: '70%', fontSize: '25px', fontWeight: 'bold' }}> 
-                                        ' {searchValue} ' Result not Found </p>) : (
+                                        isSearch && showNotFound ? (!filter.length && <p style={{ position: 'absolute', textAlign: 'center', width: '70%', fontSize: '25px', fontWeight: 'bold' }}>
+                                            ' {searchValue} ' Result not Found </p>) : (
                                             currentData && currentData.length > 0 && currentData.map(d => (
                                                 <div className='book-container-details' key={d.id} style={{ position: 'relative', paddingTop: '20px', margin: '0 25px 0 0', height: '' }} >
-                                                    <span className='edit-button' onClick={(e) => handleUpdate(d.id)} ><MdOutlineEdit /></span>
-                                                    <span className='delete-button' onClick={(e) => dispatch(deleteRequest(d.id))} ><MdDelete /></span>
+                                                    <span className='edit-button' onClick={() => handleUpdate(d.id)} ><MdOutlineEdit /></span>
+                                                    <span className='delete-button' onClick={() => dispatch(deleteRequest(d.id))} ><MdDelete /></span>
                                                     <div className='opan-modal-img' onClick={() => {
                                                         setCurrentValue(d)
                                                         setIsOpenModal(true)

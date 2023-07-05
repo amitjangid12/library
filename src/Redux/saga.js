@@ -40,7 +40,7 @@ function* getProduct() {
 
 function* requestData(action) {
   const { type, data } = action;
-
+console.log({type, data});
   let url, method;
 
   if (type === POST_DATA) {
